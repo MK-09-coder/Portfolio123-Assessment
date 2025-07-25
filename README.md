@@ -54,35 +54,6 @@ If you omit the key, the app falls back to the public `demo` key (IBM/MSFT only 
 
 ---
 
-
-
-```
-src/
-├── api/
-│   ├── prices.js
-│   └── demo_ibm.json
-├── components/
-│   ├── ChartContainer/
-│   │   ├── ChartContainer.js
-│   │   └── chartOptions.js
-│   ├── DateRangePicker/
-│   │   └── DateRangePicker.js  # From/To calendar inputs
-│   ├── PeriodSelector/
-│   │   └── PeriodSelector.js   # 1D/1W/1M/3M/6M/1Y/2Y buttons
-│   ├── SmaDropdown/
-│   │   └── SmaDropdown.jsx     # Dropdown with SMA checkboxes
-│   └── Header/
-│       └── Header.js           # Ticker input + brand
-├── context/ChartContext.js     # Global state: reducer + provider
-├── hooks/
-│   ├── useStockData.js         # Fetches data when ticker changes
-│   └── useOnClickOutside.js    # Utility for dropdown close
-├── utils/math.js               # calcSMA helper
-├── App.js
-├── main.jsx
-└── index.css
-```
-
 **Why this layout?** Feature‑first folders keep logic, UI, and config for each slice together (e.g., ChartContainer owns its `chartOptions`). Everything else is reusable primitives (hooks, utils).
 
 --
