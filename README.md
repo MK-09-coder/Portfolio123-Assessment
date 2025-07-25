@@ -67,3 +67,5 @@ npm run preview  # local preview of the build
 ```
 
 ---
+
+###To check deployed site on netlify: https://6883f0216e01f5fe35989bb6--portfolio123assessment.netlify.app/
