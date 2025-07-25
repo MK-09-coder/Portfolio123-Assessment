@@ -1,0 +1,74 @@
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  background:#f4f7ff;
+}
+.app{
+  max-width:1200px;
+  margin:0 auto;
+  padding:1rem;
+}
+.controls{
+  display:flex;
+  flex-wrap:wrap;
+  gap:1rem;
+  margin-bottom:1rem;
+}
+.period-selector button {
+  padding: .25rem .5rem;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  margin-right: .25rem;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+.period-selector button.active {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+}
+.date-range {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sma-dropdown {
+  position: relative;
+}
+.sma-btn {
+  padding: .25rem .5rem;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+.sma-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: .25rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,.12);
+  padding: .5rem .75rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+.header{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  margin-bottom:1rem;
+}
+.ticker-input{
+  font-size:1.25rem;
+  padding:.25rem .5rem;
+}
+.error{
+  color:red;
+}
