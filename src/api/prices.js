@@ -3,7 +3,7 @@ import demoIBM from "./demo_ibm.json";
 import demoMSFT from "./demo_msft.json";
 
 const API_KEY = import.meta.env.VITE_AV_KEY || "demo";
-console.log(import.meta.env.VITE_AV_KEY);
+// console.log(import.meta.env.VITE_AV_KEY);
 const FALLBACKS = { IBM: demoIBM, MSFT: demoMSFT };
 
 export async function fetchDaily(ticker = "IBM") {
