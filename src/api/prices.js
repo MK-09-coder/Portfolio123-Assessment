@@ -14,7 +14,7 @@ export async function fetchDaily(ticker = "IBM") {
   try {
     const { data } = await axios.get(url);
     const series = data["Time Series (Daily)"];
-    if (!series) throw data; // triggers fallback
+    if (!series) throw data;
     return Object.entries(series)
       .map(([date, v]) => ({
         t: new Date(date).getTime(),

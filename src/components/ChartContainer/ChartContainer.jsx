@@ -6,7 +6,7 @@ import useStockData from "../../hooks/useStockData";
 
 export default function ChartContainer() {
   const { state } = useChart();
-  useStockData(); // fetch on mount/ticker change
+  useStockData();
 
   if (state.loading) return <p>Loading …</p>;
   if (state.error) return <p className="error">{state.error}</p>;
